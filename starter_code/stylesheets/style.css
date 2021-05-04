@@ -1,3 +1,67 @@
+/*** nav ***/
+
+nav{
+    display: flex;
+    height: 50px;
+}
+nav > ul{
+    display: none;
+}
+
+
+
+/*** header ***/
+
+header{
+    display: flex;
+    flex-direction: column;   
+}
+main{
+    display: flex;
+    flex-direction: column;   
+}
+
+
+
+/*** good company ***/
+
+.goodCompany{
+    background-color:#F4F3F4;
+}
+.logos{
+    display: flex;
+    flex-direction: column; 
+}
+main > .goodCompany >img{
+    height: 50px; 
+}
+
+
+/*** try it ***/
+
+/*** info ***/
+
+.info{
+    display: flex;
+    flex-direction: column; 
+}
+
+
+
+/*** footer ***/
+
+footer{
+    background-color:#F4F3F4;
+}
+
+
+
+
+
+
+
+
+
 /*
 background-grey: #F4F3F4;
 button-purple: #192592
