@@ -1,61 +1,94 @@
-/*** nav ***/
+/*** body ***/
+body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
 
+
+/*** nav ***/
 nav{
     display: flex;
     height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
 }
 nav > ul{
     display: none;
 }
 
 
-
 /*** header ***/
-
 header{
     display: flex;
-    flex-direction: column;   
+    flex-direction: column; 
+    align-content: space-around;
+    margin: 25px; 
+    height: 650px;
+    text-align: left;
 }
-main{
-    display: flex;
-    flex-direction: column;   
+input{
+    height: 50px;
+}
+button{
+    background-color: #192592; 
+    height: 50px;
 }
 
+
+
+/*** main ***/
+main{
+    display: flex;
+    flex-direction: column; 
+}
 
 
 /*** good company ***/
-
 .goodCompany{
     background-color:#F4F3F4;
+    display: flex;
+    flex-direction: column; 
+    align-content: space-around;
+    padding: 25px; 
+    height: 750px;
 }
 .logos{
     display: flex;
     flex-direction: column; 
+    align-content: space-around;
+
 }
-main > .goodCompany >img{
-    height: 50px; 
+.logos > img{
+    width: auto;
 }
 
 
 /*** try it ***/
+.tryIt{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 
 /*** info ***/
-
 .info{
+    /*background-color:#b62549;*/
     display: flex;
     flex-direction: column; 
 }
 
 
-
 /*** footer ***/
-
 footer{
     display: flex;
-    flex-direction: row; 
+    flex-direction: column; 
     background-color:#F4F3F4;
 }
-
 
 
 
