@@ -1,7 +1,8 @@
 /*** all ***/
 * {
+  width: auto;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   box-sizing: border-box;
 }
 html {
@@ -167,11 +168,13 @@ footer {
 }
 footer ul {
   list-style: none;
-  margin: 20px;
-}
-.legal {
+  margin: 30px;
+  display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
 footer img {
   width: 20px;
 }
@@ -183,14 +186,124 @@ footer p {
 }
 
 @media (min-width: 768px) {
-  header {
-    background-color: rgb(36, 138, 185);
+  header h1 {
+    font-size: 4rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  header input {
+    width: 310px;
+  }
+  header button {
+    width: 155px;
+  }
+  header img {
+    width: 400px;
+  }
+  header > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+
+  .goodCompany {
+    align-items: center;
+  }
+  .goodCompany button {
+    width: 165px;
+  }
+  .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .logos img {
+    width: 165px;
+  }
+  .tryIt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .tryIt input {
+    width: 165px;
+  }
+  .tryIt button {
+    width: 155px;
+  }
+  .infoText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .info img {
+    width: 15%;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 
 @media (min-width: 1200px) {
+  nav > ul {
+    width: 500px;
+    list-style: none;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  nav > .fas {
+    display: none;
+  }
+
   header {
-    background-color: rgb(31, 214, 184);
+    margin: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+  }
+
+  header > .headerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  header h1 {
+    width: 450px;
+    font-size: 5rem;
+  }
+  header p {
+    width: 450px;
+  }
+  header input {
+    display: none;
+  }
+  .tryIt {
+    height: 75px;
+  }
+  .tryIt input {
+    display: none;
+  }
+  .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .logos > img {
+    width: 165px;
+  }
+  footer {
+    height: 75px;
   }
 }
 
