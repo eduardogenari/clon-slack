@@ -1,0 +1,55 @@
+body{
+    width: 100%;
+    margin:0%;
+    padding: 0%;
+    background-color: bisque;
+}
+
+nav{
+    width: 100%;
+    background-color: blueviolet;
+    height: 75px;
+}
+
+header{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(226, 43, 144);
+}
+
+main{
+    background-color: blueviolet;
+}
+
+.goodCompany{
+    background-color: rgb(82, 78, 85);
+    height: 500px;
+}
+
+.tryIt{
+    background-color: rgb(199, 149, 238);
+    height: 250px;
+}
+
+.info{
+    background-color: rgb(130, 104, 150);
+    height: 500px;
+}
+
+footer{
+    background-color: rgb(218, 40, 144);
+    height: 75px;
+}
+
+@media(min-width:768px){
+    header{
+    background-color:rgb(36, 138, 185);
+    }
+  }
+
+  @media(min-width:1200px){
+    header{
+    background-color:rgb(31, 214, 184);
+    }
+  }
+

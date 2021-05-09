@@ -1,101 +1,198 @@
-/*** body ***/
-body{
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
+/*** all ***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
+html {
+  font-family: Arial;
+  font-size: 15px;
+}
+body {
+  background-color: white;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
 
 /*** nav ***/
-nav{
-    display: flex;
-    height: 50px;
-    justify-content: space-between;
-    align-items: center;
-    margin: 25px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  background-color: white;
+  padding: 15px 30px;
+  border-bottom: 3px rgb(23, 23, 24);
 }
-nav > ul{
-    display: none;
+nav > ul {
+  display: none;
 }
-
 
 /*** header ***/
-header{
-    display: flex;
-    flex-direction: column; 
-    align-content: space-around;
-    margin: 25px; 
-    height: 650px;
-    text-align: left;
+header {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  margin: 25px;
+  text-align: left;
+  /*overflow: visible;*/
 }
-input{
-    height: 50px;
+header h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
 }
-button{
-    background-color: #192592; 
-    height: 50px;
+header p {
+  margin-bottom: 20px;
 }
-
-
-
-/*** main ***/
-main{
-    display: flex;
-    flex-direction: column; 
+header img {
+  width: 100%;
+  margin: 0 auto;
 }
-
+header input {
+  height: 50px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: grey;
+}
+header button {
+  background-color: #192592;
+  color: white;
+  height: 50px;
+  width: 100%;
+  padding: 5px;
+  line-height: 3;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border-style: none;
+}
 
 /*** good company ***/
-.goodCompany{
-    background-color:#F4F3F4;
-    display: flex;
-    flex-direction: column; 
-    align-content: space-around;
-    padding: 25px; 
-    height: 750px;
+.goodCompany {
+  background-color: #f4f3f4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  padding: 25px;
 }
-.logos{
-    display: flex;
-    flex-direction: column; 
-    align-content: space-around;
-
+.logos {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  margin: 25px;
 }
-.logos > img{
-    width: auto;
+.logos > img {
+  width: auto;
+  margin: 35px;
 }
-
+.goodCompany > button {
+  background-color: white;
+  height: 50px;
+  width: 100%;
+  padding: 5px;
+  line-height: 3;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border-color: #192592;
+  color: #192592;
+}
+.goodCompany > p,
+h2 {
+  margin-bottom: 25px;
+}
 
 /*** try it ***/
-.tryIt{
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.tryIt {
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
 }
-
-
+.tryIt input {
+  height: 50px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: grey;
+}
+.tryIt button {
+  background-color: #192592;
+  color: white;
+  height: 50px;
+  width: 100%;
+  padding: 5px;
+  line-height: 3;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border-style: none;
+}
 
 /*** info ***/
-.info{
-    /*background-color:#b62549;*/
-    display: flex;
-    flex-direction: column; 
+.info {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
 }
-
+.info img {
+  width: 25%;
+}
+.info ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+.info li {
+  margin-bottom: 10px;
+}
 
 /*** footer ***/
-footer{
-    display: flex;
-    flex-direction: column; 
-    background-color:#F4F3F4;
+footer {
+  background-color: #f4f3f4;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /*background-color: #f4f3f4;*/
+}
+footer ul {
+  list-style: none;
+  margin: 20px;
+}
+.legal {
+  flex-direction: row;
+}
+footer img {
+  width: 20px;
+}
+footer p {
+  margin: 15px;
+}
+.socialMedia {
+  margin: 25px;
 }
 
+@media (min-width: 768px) {
+  header {
+    background-color: rgb(36, 138, 185);
+  }
+}
 
-
-
-
-
-
+@media (min-width: 1200px) {
+  header {
+    background-color: rgb(31, 214, 184);
+  }
+}
 
 /*
 background-grey: #F4F3F4;
